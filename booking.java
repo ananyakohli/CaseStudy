@@ -105,7 +105,7 @@ public void please_enter_valid_contact_no_alert_message_should_populate() throws
 @And("^Enter Mobile No. as \"([^\"]*)\"$")
 public void enter_mobile_no_as_something(String strArg1) throws Throwable {
 	driver.findElement(By.id("txtPhone")).clear();
-	driver.findElement(By.id("txtPhone")).sendKeys("9446728151");
+	driver.findElement(By.id("txtPhone")).sendKeys("9448678191");
 }
 
 @When("^User enter address details as \"([^\"]*)\"$")
