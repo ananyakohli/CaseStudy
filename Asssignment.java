@@ -42,26 +42,26 @@ public class Assignment extends globalDriver{
 		String alertmsg1=driver.switchTo().alert().getText();
 		System.out.println("alert message is "+alertmsg1);
 		driver.switchTo().alert().accept();
-		driver.findElement(By.id("txtFirstName")).sendKeys("Mohan");
+		driver.findElement(By.id("txtFirstName")).sendKeys("Ananya");
 		
 		driver.findElement(By.id("btnPayment")).click();
 		String alertmsg2=driver.switchTo().alert().getText();
 		System.out.println("alert message is "+alertmsg2);
 		driver.switchTo().alert().accept();
-		driver.findElement(By.id("txtLastName")).sendKeys("Gond");
+		driver.findElement(By.id("txtLastName")).sendKeys("Kohli");
 		
 		driver.findElement(By.id("btnPayment")).click();
 		String alertmsg3=driver.switchTo().alert().getText();
 		System.out.println("alert message is "+alertmsg3);
 		driver.switchTo().alert().accept();
 		
-		driver.findElement(By.id("txtEmail")).sendKeys("shreyas.jaidhar");
+		driver.findElement(By.id("txtEmail")).sendKeys("ananya.kohli");
 		driver.findElement(By.id("btnPayment")).click();
 		String alertmsg4=driver.switchTo().alert().getText();
 		System.out.println("alert message is "+alertmsg4);
 		driver.switchTo().alert().accept();
 		driver.findElement(By.id("txtEmail")).clear();
-		driver.findElement(By.id("txtEmail")).sendKeys("shreyasjaidhar@gmail.com");
+		driver.findElement(By.id("txtEmail")).sendKeys("ananyakohli@gmail.com");
 		
 		driver.findElement(By.id("btnPayment")).click();
 		String alertmsg5=driver.switchTo().alert().getText();
@@ -74,7 +74,7 @@ public class Assignment extends globalDriver{
 		System.out.println("alert message is "+alertmsg6);
 		driver.switchTo().alert().accept();
 		driver.findElement(By.id("txtPhone")).clear();
-		driver.findElement(By.id("txtPhone")).sendKeys("987654321");
+		driver.findElement(By.id("txtPhone")).sendKeys("987567321");
 		
 		String address="Brigade Bhuwalka Icon Bangalore Karnataka";
 		driver.findElement(By.xpath("/html/body/div/div/form/table/tbody/tr[6]/td[2]/textarea")).sendKeys(address);
