@@ -7,30 +7,30 @@ Scenario: Check error message by clicking Confirm Booking without providing Firs
 Given User is on Hotel Booking Form page
 When User clicking on Confirm Booking without providing First Name
 Then Please fill the First Name alert message should populate
-And Enter First Name as "Mohan"
+And Enter First Name as "Ananya"
 
 Scenario: Check error message by clicking Confirm Booking without providing Last Name and enter Last Name
 Given User is on Hotel Booking Form page
 When User clicking on Confirm Booking without providing Last Name
 Then Please fill the Last Name alert message should populate
-And Enter Last Name as "jaidhar"
+And Enter Last Name as "Kohli"
 
 Scenario: Check error message by clicking Confirm Booking with providing wrong email format and enter Email
 Given User is on Hotel Booking Form page
 When User clicking on Confirm Booking with providing wrong email format as "mohan.gond"
 Then Please fill the Email alert message should populate
-And Enter Email as "shreyasjaidhar@gmail.com"
+And Enter Email as "ananyakohli@gmail.com"
 
 Scenario: Check error message by clicking Confirm Booking without providing Mobile no
 Given User is on Hotel Booking Form page
 When User clicking on Confirm Booking without providing Mobile no
 Then Please fill the Mobile No alert message should populate
 
-Scenario: Check error message by clicking Confirm Booking with providing Mobile no doesn’t start with either 7,8 or 9 and doesn’t have 10 digits and enter Mobile No
+Scenario: Check error message by clicking Confirm Booking with providing Mobile no doesnâ€™t start with either 7,8 or 9 and doesnâ€™t have 10 digits and enter Mobile No
 Given User is on Hotel Booking Form page
-When User clicking on Confirm Booking with providing Mobile no doesn’t start with either 7,8 or 9 and doesn’t have 10 digits
+When User clicking on Confirm Booking with providing Mobile no doesnâ€™t start with either 7,8 or 9 and doesnâ€™t have 10 digits
 Then Please enter valid Contact no alert message should populate
-And Enter Mobile No. as "9448528161"
+And Enter Mobile No. as "9448678191"
 
 Scenario: Enter and validate Address details
 Given User is on Hotel Booking Form page
@@ -76,7 +76,7 @@ Scenario: Check error message by clicking Confirm Booking without providing Expi
 Given User is on Hotel Booking Form page
 When User clicking on Confirm Booking without providing Expiration month
 Then Please fill expiration month alert message should populate
-And Enter Expiration month as "25/01/2021"
+And Enter Expiration month as "15/02/2021"
 
 Scenario: Check error message by clicking Confirm Booking without providing Expiration Year and enter Expiration Year
 Given User is on Hotel Booking Form page
