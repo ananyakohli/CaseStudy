@@ -60,7 +60,7 @@ public void enter_last_name_as_something(String strArg1) throws Throwable {
 
 @When("^User clicking on Confirm Booking with providing wrong email format as \"([^\"]*)\"$")
 public void user_clicking_on_confirm_booking_with_providing_wrong_email_format_as_something(String strArg1) throws Throwable {
-	driver.findElement(By.id("txtEmail")).sendKeys("mohan.gond");
+	driver.findElement(By.id("txtEmail")).sendKeys("ananya.kohli");
 	driver.findElement(By.id("btnPayment")).click();
 }
 
@@ -74,7 +74,7 @@ public void please_fill_the_email_alert_message_should_populate() throws Throwab
 @And("^Enter Email as \"([^\"]*)\"$")
 public void enter_email_as_something(String strArg1) throws Throwable {
 	driver.findElement(By.id("txtEmail")).clear();
-	driver.findElement(By.id("txtEmail")).sendKeys("mohangond06@gmail.com");
+	driver.findElement(By.id("txtEmail")).sendKeys("ananyakohli@gmail.com");
 }
 
 @When("^User clicking on Confirm Booking without providing Mobile no$")
@@ -89,7 +89,7 @@ public void please_fill_the_mobile_no_alert_message_should_populate() throws Thr
 	driver.switchTo().alert().accept();
 }
 
-@When("^User clicking on Confirm Booking with providing Mobile no doesn’t start with either 7,8 or 9 and doesn’t have 10 digits$")
+@When("^User clicking on Confirm Booking with providing Mobile no doesnâ€™t start with either 7,8 or 9 and doesnâ€™t have 10 digits$")
 public void user_clicking_on_confirm_booking_with_providing_mobile_no_doesnt_start_with_either_78_or_9_and_doesnt_have_10_digits() throws Throwable {
 	driver.findElement(By.id("txtPhone")).sendKeys("123456");
 	driver.findElement(By.id("btnPayment")).click();
@@ -105,7 +105,7 @@ public void please_enter_valid_contact_no_alert_message_should_populate() throws
 @And("^Enter Mobile No. as \"([^\"]*)\"$")
 public void enter_mobile_no_as_something(String strArg1) throws Throwable {
 	driver.findElement(By.id("txtPhone")).clear();
-	driver.findElement(By.id("txtPhone")).sendKeys("9448528161");
+	driver.findElement(By.id("txtPhone")).sendKeys("9446728151");
 }
 
 @When("^User enter address details as \"([^\"]*)\"$")
